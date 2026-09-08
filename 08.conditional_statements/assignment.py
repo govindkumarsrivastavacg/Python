@@ -54,7 +54,7 @@ if(num1==0):
 num2=int(input("Enter a number: "))
 if(num2>0):
     print("Positive")
-elif(num2<0):
+else:
     print("Not positive")
 
 
@@ -67,7 +67,7 @@ elif(num2<0):
 # Minor
 
 age1=int(input("Enter age: "))
-if(age>=18):
+if(age1>=18):
     print("Adult")
 else:
     print("Minor")
@@ -81,7 +81,7 @@ number=int(input("Enter the number: "))
 if(number%2==0):
     print("Even")
 else:
-    print("odd")
+    print("Odd")
 
 
 # 9.
@@ -99,7 +99,7 @@ else:
 
 a,b=map(int,input("Enter two numbers:").split())
 if(a>b):
-    print("a is greeater than b")
+    print("a is greater than b")
 elif(a==b):
     print("both numbers are equal")
 else:
@@ -187,7 +187,7 @@ else:
 
 marks2=int(input("Enter your marks: "))
 if(marks2>=90):
-    print("Excellemt")
+    print("Excellent")
 elif(marks2>=75):
     print("Good")
 elif(marks2>=40):
@@ -262,7 +262,7 @@ else:
 
 num5=int(input("Enter the number: "))
 if(num5>0):
-    if(num>100):
+    if(num5>100):
         print("The number is greater than 100")
 
 # 19.
@@ -285,7 +285,7 @@ if(age3>=18):
 
 num6=int(input("Enter number: "))
 if(num6!=0):
-    if(num<0):
+    if(num6<0):
         print("Negative")
     else:
         print("Positive")
@@ -303,7 +303,7 @@ if(num6!=0):
 age4=int(input("Enter your age: "))
 mark=int(input("Enter your marks: "))
 if(age4>=18 and mark>=40):
-    print("Elligible")
+    print("Eligible")
 
 
 # 22.
@@ -328,9 +328,19 @@ if(n>100 or n<10):
 # has_id is True
 
 age5=int(input("Enter age: "))
-has_id=bool(input("Person has id? "))
-if(age5>=18 and has_id==True):
-    print("Allowed")
+has_id=(input("Person has id? (yes/no)")).strip().lower()
+if(has_id== "yes" or has_id=="no"):
+    if(has_id=="yes"):
+        has_id=True
+    elif(has_id=="no"):
+        has_id=False
+    if(age5>=18 and has_id==True):
+        print("Allowed")
+    else:
+        print("Not Allowed")
+else:
+    print("Enter a valid answer")
+
 
 
 # 24.
@@ -358,7 +368,7 @@ n3=int(input("Enter number: "))
 if(n3<0):
     print("Less than 0")
 elif(n3>100):
-    print("Greater tha 100")
+    print("Greater than 100")
 
 
 # 26.
@@ -366,8 +376,8 @@ elif(n3>100):
 
 # is_closed = False
 
-is_closed=bool(input("Enter if True or False: "))
-if(not(is_closed==True)):
+is_closed=input("Is it closed? (yes/no): ").strip().lower() == "yes"
+if not is_closed:
     print("Open")
 
 
@@ -375,7 +385,7 @@ if(not(is_closed==True)):
 # Take a number and check whether it is between 10 and 50 using and.
 
 n4=int(input("enter number: "))
-if(n4>10 and n4<50):
+if(10 <= n4 <= 50):
     print("Number is between 10 and 50.")
 
 
@@ -395,9 +405,9 @@ if(n5<10 or n5>50):
 # has_ticket
 # Print Allowed only when all three are true.
 
-is_student=bool(input("Is student?"))
-has_id1=bool(input("Has id?"))
-has_ticket=bool(input("Has ticket?"))
+is_student=input("Is student? (yes/no): ").strip().lower() == "yes"
+has_id1=input("Has id? (yes/no): ").strip().lower() == "yes"
+has_ticket=input("Has ticket? (yes/no): ").strip().lower() == "yes"
 
 if(is_student == True and has_id1==True and has_ticket==True):
     print("Allowed")
@@ -429,8 +439,8 @@ if(is_student == True and has_id1==True and has_ticket==True):
 
 age6=int(input("Enter your age: "))
 marks4=int(input("Enter your marks: "))
-Has_id=bool(input("Has id?"))
-if(age6>=18 and marks4>=40 and Has_id==True):
+Has_id=input("Has id? (yes/no): ").strip().lower() == "yes"
+if(age6>=18 and marks4>=40 and Has_id):
     print("Eligible")
 else:
     print("Not eligible")

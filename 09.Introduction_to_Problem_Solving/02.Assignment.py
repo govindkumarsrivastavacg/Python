@@ -59,3 +59,4 @@ if(avg>=40):
     print("Pass")
 else:
     print("Fail")
+    
