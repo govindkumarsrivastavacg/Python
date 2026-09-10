@@ -12,9 +12,9 @@ if(unit>0):
     if(unit<=100):
         bill=unit*5
     elif(unit<=200):
-        bill=(unit//100)*7+(unit%100)*5
+        bill=(unit-100)*7+500
     elif(unit>200):
-        bill=(unit//200)*10+((unit%200)//100)*7+(((unit%200)%100)*5)
+        bill=(500+700+(unit-200)*10)
     print(bill)
 else:
     print("Enter a valid unit")
