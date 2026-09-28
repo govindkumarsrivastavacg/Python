@@ -98,6 +98,8 @@
 # Do not use max().
   
 
+
+
 # Str=input("Write a sentence: ").strip().lower().split()
 # point=0
 # for word in Str[0:1]:
@@ -1066,5 +1068,122 @@
 # 7.1–9 → "Excellent"
 # 9.1–10 → "Outstanding"
 # Print category counts and average rating.
+
+# ct_poor=0
+# ct_avg=0
+# ct_good=0
+# ct_ex=0
+# ct_out=0
+# total=0
+# for i in range(10):
+#     rating=float(input("Enter the rating of the movie: "))
+#     print()
+#     if(rating>10 or rating<0):
+#         print("Invalid rating")
+#     elif(rating>9):
+#         ct_out+=1
+#     elif(rating>7):
+#         ct_ex+=1
+#     elif(rating>5):
+#         ct_good+=1
+#     elif(rating>3):
+#         ct_avg+=1
+#     else:
+#         ct_poor+=1
+#     total+=rating
+# avg=total/10
+# print(f"No. of movies with poor rating: {ct_poor}")
+# print(f"No. of movies with average rating: {ct_avg}")
+# print(f"No. of movies with good rating: {ct_good}")
+# print(f"No. of movies with excellent rating: {ct_ex}")
+# print(f"No. of movies with outstanding rating: {ct_out}")
+# print(f"Average rating: {avg}")
+
+
+# 27. Word Frequency Without Dictionary
+# Take a sentence.
+
+# Find how many times every word appears.
+
+# Do not use:
+
+# Dictionary
+# Counter
+# count()
+# Print only words appearing more than once.
+
+
+
+
+# Str=input("Enter a string: ").strip().split()
+# x=0
+# for word in Str:
+#     count=0
+#     y=0
+#     for j in Str:
+#         if(word==j ):
+#             if(y<x):
+#                 break
+#             else:
+#                 count+=1
+#         y+=1
+#     if(count>1):
+#         print(f"The word '{word}' appears {count} times in the sentence.")
+#     x+=1
+
+
+
+
+# 28. Number With Maximum Even Digits
+# Take 10 integers.
+
+# For each number:
+
+# Convert it into a string.
+# Count even digits.
+# Count odd digits.
+# Print the number having the highest number of even digits.
+
+# If tied, print all tied numbers.
+
+
+# high_ct=0
+# high=""
+# for i in range(10):
+#     ct_even=0
+#     ct_odd=0
+#     Num=int(input("Enter a number: "))
+#     Str=str(Num)
+#     for char in Str:
+#         j=int(char)
+#         if(j%2==0):
+#             ct_even+=1
+#         else:
+#             ct_odd+=1
+#     if(i==0):
+#         high_ct=ct_even
+#         high=Str
+#     else:
+#         if(ct_even>high_ct):
+#             high_ct=ct_even
+#             high=Str
+# print(f"The number with the highest even digits is: {high}")
+    
+
+
+
+# 29. Email Validator
+# Take 5 email-like strings.
+
+# Check:
+
+# Exactly one @.
+# At least one . after @.
+# No spaces.
+# Text before @ must not be empty.
+# Domain must not be empty.
+# Print "Valid" or "Invalid" for each.
+
+# Do not use regular expressions.
 
 
