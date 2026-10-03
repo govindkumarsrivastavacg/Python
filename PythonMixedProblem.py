@@ -891,7 +891,7 @@
 # Do not use libraries for compression
 
 
-# Str=input("Enter a string: ")
+# Str='aabbcccddddaa'
 # x=0
 
 # for char in Str:
@@ -907,11 +907,11 @@
 #                 break
                 
 #             else:
-#                 count+=1
+#                 count+=1  
 #         y+=1
 #     if(flag==False):
 #         print(char+str(count),end="")
-#     x+=1
+#     x+=1 
    
 
 
@@ -1187,3 +1187,59 @@
 # Do not use regular expressions.
 
 
+
+
+# for i in range(5):
+#     ct_at=0
+#     flag_at=False
+#     flag_dot=False
+#     flag_spa=True
+#     flag_before=False
+#     flag_domain=False
+#     y=1
+#     z=1
+#     l=1
+#     m=1
+
+#     email=input("Enter an email: ").lower()
+#     x=0
+#     for j in email:
+#         if(j=='@' and x!=0):
+#             ct_at+=1
+#             if(ct_at==1):
+#                 flag_at=True
+#                 X=x
+#             elif(ct_at>1):
+#                 flag_at=False
+            
+#     for j in email:
+
+#         if(j==" "):
+#             flag_spa=False
+#         elif(j=='@' and x!=0):
+#                 ct_at+=1
+
+#                 if(ct_at==1):
+#                      flag_at=True
+#                      X=x
+#                 elif(ct_at>1):
+#                      flag_at=False
+#         elif(j=="." and ct_at!=0 ):
+#              flag_dot=True
+#         elif(x>=0 and x<X):
+#             if((j>='a' and j<='z') or (j>='0' and j<='9')):
+#                 m+=1
+#             l+=1
+#         elif():
+#             if((j>='a' and j<='z') or (j>='0' and j<='9') or j=="."):
+#                 z+=1
+#             y+=1
+#         x+=1
+#     if(l==m and l!=1 ):
+#          flag_before=True
+#     if(y==z and y!=1):
+#          flag_domain=True
+#     if(flag_domain and flag_before and flag_at and flag_dot and flag_spa):
+#         print("Email is valid")
+#     else:
+#         print("Invalid Email")
