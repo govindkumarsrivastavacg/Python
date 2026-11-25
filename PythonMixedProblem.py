@@ -264,18 +264,18 @@
 # More than 4 → "Highly Repeated"
 
 
-# Str=input("Enter a string: ")
-# x=0
-# for char in Str:
-#     count=0
-#     y=0
-#     for j in Str:
-#         if(char==j ):
-#             if(y<x):
-#                 break
-#             else:
-#                 count+=1
-#         y+=1
+Str=input("Enter a string: ")
+x=0
+for char in Str:
+    count=0
+    y=0
+    for j in Str:
+        if(char==j ):
+            if(y<x):
+                break
+            else:
+                count+=1
+        y+=1
 #     if(count>4):
 #         print(char)
 #         print("Highly repetated")

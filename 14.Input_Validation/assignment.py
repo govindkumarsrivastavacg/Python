@@ -1,524 +1,504 @@
 
 
-# ## Part A — Intermediate Problems
-
-# ### Q1. Valid Marks
-
+# Part A — Intermediate Problems
+ ### Q1. Valid Marks
 # Ask the user to enter marks between `0` and `100`, inclusive. Keep asking until valid marks are entered. Finally, display the accepted marks.
 
-# **Answer:**
 
 
-# marks = int(input("Enter marks (0-100): "))
+
+# # marks = int(input("Enter marks (0-100): "))
 
 # while marks < 0 or marks > 100:
-#     print("Invalid marks!")
-#     marks = int(input("Enter marks (0-100): "))
+# #     print("Invalid marks!")
+# #     marks = int(input("Enter marks (0-100): "))
 
-# print("Accepted marks:", marks)
+# # print("Accepted marks:", marks)
 
 
-# ### Q2. Positive Integer
+# # ### Q2. Positive Integer
 
-# Keep asking the user to enter an integer until they enter a number greater than `0`. Display the accepted number.
+# # Keep asking the user to enter an integer until they enter a number greater than `0`. Display the accepted number.
 
-# **Answer:**
 
-# n = int(input("Enter a positive integer: "))
 
-# while n <= 0:
-#     print("Invalid number!")
-#     n = int(input("Enter a positive integer: "))
+# # n = int(input("Enter a positive integer: "))
 
-# print("Accepted number:", n)
+# # while n <= 0:
+# #     print("Invalid number!")
+# #     n = int(input("Enter a positive integer: "))
 
+# # print("Accepted number:", n)
 
-# ### Q3. Age Validation
 
-# Accept ages from `0` through `120`. If the age is outside this range, display an error message and ask again.
+# # ### Q3. Age Validation
 
-# **Answer:**
+# # Accept ages from `0` through `120`. If the age is outside this range, display an error message and ask again.
 
-# age = int(input("Enter your age: "))
 
-# while age < 0 or age > 120:
-#     print("Invalid age!")
-#     age = int(input("Enter your age: "))
+# # age = int(input("Enter your age: "))
 
-# print("Accepted age:", age)
+# # while age < 0 or age > 120:
+# #     print("Invalid age!")
+# #     age = int(input("Enter your age: "))
 
+# # print("Accepted age:", age)
 
-# ### Q4. Menu Choice
 
-# Display the menu repeatedly until the user enters `1`, `2`, `3`, or `4`. Display the selected option after valid input.
+# # ### Q4. Menu Choice
 
-# **Answer:**
+# # Display the menu repeatedly until the user enters `1`, `2`, `3`, or `4`. Display the selected option after valid input.
 
 
-# print("1. View profile")
-# print("2. Edit profile")
-# print("3. Settings")
-# print("4. Exit")
 
-# choice = int(input("Enter your choice: "))
 
-# while choice < 1 or choice > 4:
-#     print("Invalid choice!")
-#     choice = int(input("Enter your choice: "))
+# # print("1. View profile")
+# # print("2. Edit profile")
+# # print("3. Settings")
+# # print("4. Exit")
 
-# print("Selected option:", choice)
+# # choice = int(input("Enter your choice: "))
 
+# # while choice < 1 or choice > 4:
+# #     print("Invalid choice!")
+# #     choice = int(input("Enter your choice: "))
 
-# ### Q5. Password Length
+# # print("Selected option:", choice)
 
-# Keep asking for a password until it contains at least eight characters. Leading and trailing spaces should not count toward the password length.
 
-# **Answer:**
+# # ### Q5. Password Length
 
-# ```python
-# password = input("Enter password: ").strip()
+# # Keep asking for a password until it contains at least eight characters. Leading and trailing spaces should not count toward the password length.
 
-# while len(password) < 8:
-#     print("Password must contain at least 8 characters!")
-#     password = input("Enter password: ").strip()
 
-# print("Password accepted!")
 
+# # ```python
+# # password = input("Enter password: ").strip()
 
-# ### Q6. Temperature Range
+# # while len(password) < 8:
+# #     print("Password must contain at least 8 characters!")
+# #     password = input("Enter password: ").strip()
 
-# Accept a temperature between `-20` and `45`, inclusive. Repeat until the input is valid.
+# # print("Password accepted!")
 
-# **Answer:**
 
-# temp = float(input("Enter temperature: "))
+# # ### Q6. Temperature Range
 
-# while temp < -20 or temp > 45:
-#     print("Invalid temperature!")
-#     temp = float(input("Enter temperature: "))
+# # Accept a temperature between `-20` and `45`, inclusive. Repeat until the input is valid.
 
-# print("Accepted temperature:", temp)
 
+# # temp = float(input("Enter temperature: "))
 
-# ### Q7. Withdrawal Validation
+# # while temp < -20 or temp > 45:
+# #     print("Invalid temperature!")
+# #     temp = float(input("Enter temperature: "))
 
-# Start with a balance of ₹5,000. Reject withdrawals that are zero, negative, or greater than the available balance.
+# # print("Accepted temperature:", temp)
 
-# **Answer:**
 
+# # ### Q7. Withdrawal Validation
 
-# balance = 5000
+# # Start with a balance of ₹5,000. Reject withdrawals that are zero, negative, or greater than the available balance.
 
-# amount = float(input("Enter withdrawal amount: "))
 
-# while amount <= 0 or amount > balance:
-#     print("Invalid withdrawal amount!")
-#     amount = float(input("Enter withdrawal amount: "))
 
-# balance -= amount
+# # balance = 5000
 
-# print("Withdrawal successful!")
-# print("Remaining balance:", balance)
+# # amount = float(input("Enter withdrawal amount: "))
 
+# # while amount <= 0 or amount > balance:
+# #     print("Invalid withdrawal amount!")
+# #     amount = float(input("Enter withdrawal amount: "))
 
-# ### Q8. Username Validation
+# # balance -= amount
 
-# The username must contain at least five characters after trimming outer spaces and must not contain internal spaces.
+# # print("Withdrawal successful!")
+# # print("Remaining balance:", balance)
 
-# **Answer:**
 
-# username = input("Enter username: ").strip()
+# # ### Q8. Username Validation
 
-# while len(username) < 5 or " " in username:
-#     print("Invalid username!")
-#     username = input("Enter username: ").strip()
+# # The username must contain at least five characters after trimming outer spaces and must not contain internal spaces.
 
-# print("Accepted username:", username)
 
 
-# ### Q9. Divisible Number
+# # username = input("Enter username: ").strip()
 
-# Accept a positive integer divisible by both `3` and `5`.
+# # while len(username) < 5 or " " in username:
+# #     print("Invalid username!")
+# #     username = input("Enter username: ").strip()
 
-# **Answer:**
+# # print("Accepted username:", username)
 
-# n = int(input("Enter a positive integer: "))
 
-# while n <= 0 or n % 3 != 0 or n % 5 != 0:
-#     print("Invalid number!")
-#     n = int(input("Enter a positive integer: "))
+# # ### Q9. Divisible Number
 
-# print("Accepted number:", n)
+# # Accept a positive integer divisible by both `3` and `5`.
 
 
-# Q10. Limited PIN Attempts
+# # n = int(input("Enter a positive integer: "))
 
-# The secret PIN is `2468`. Allow up to three attempts. Stop immediately when the PIN is correct.
+# # while n <= 0 or n % 3 != 0 or n % 5 != 0:
+# #     print("Invalid number!")
+# #     n = int(input("Enter a positive integer: "))
 
-# **Answer:**
+# # print("Accepted number:", n)
 
 
-# pin = 2468
-# attempts = 0
+# # Q10. Limited PIN Attempts
 
-# while attempts < 3:
-#     entered_pin = int(input("Enter PIN: "))
-#     attempts += 1
+# # The secret PIN is `2468`. Allow up to three attempts. Stop immediately when the PIN is correct.
 
-#     if entered_pin == pin:
-#         print("Access granted!")
-#         break
-#     else:
-#         print("Incorrect PIN!")
 
-# if attempts == 3 and entered_pin != pin:
-#     print("Access denied!")
 
-# ### Q11. Number Within a Range
+# # pin = 2468
+# # attempts = 0
 
-# Accept an integer between `10` and `50`, inclusive. Print whether it is even or odd.
+# # while attempts < 3:
+# #     entered_pin = int(input("Enter PIN: "))
+# #     attempts += 1
 
-# **Answer:**
+# #     if entered_pin == pin:
+# #         print("Access granted!")
+# #         break
+# #     else:
+# #         print("Incorrect PIN!")
 
+# # if attempts == 3 and entered_pin != pin:
+# #     print("Access denied!")
 
-# n = int(input("Enter an integer (10-50): "))
+# # ### Q11. Number Within a Range
 
-# while n < 10 or n > 50:
-#     print("Invalid number!")
-#     n = int(input("Enter an integer (10-50): "))
+# # Accept an integer between `10` and `50`, inclusive. Print whether it is even or odd.
 
-# if n % 2 == 0:
-#     print("Even")
-# else:
-#     print("Odd")
 
 
-# ### Q12. Deposit Validation
+# # n = int(input("Enter an integer (10-50): "))
 
-# Start with a balance of ₹2,000. Accept only positive deposits and display the updated balance.
+# # while n < 10 or n > 50:
+# #     print("Invalid number!")
+# #     n = int(input("Enter an integer (10-50): "))
 
-# **Answer:**
+# # if n % 2 == 0:
+# #     print("Even")
+# # else:
+# #     print("Odd")
 
 
-# balance = 2000
+# # ### Q12. Deposit Validation
 
-# amount = float(input("Enter deposit amount: "))
+# # Start with a balance of ₹2,000. Accept only positive deposits and display the updated balance.
 
-# while amount <= 0:
-#     print("Invalid deposit amount!")
-#     amount = float(input("Enter deposit amount: "))
 
-# balance += amount
 
-# print("Updated balance:", balance)
+# # balance = 2000
 
+# # amount = float(input("Enter deposit amount: "))
 
-# ## Part B — Challenging Problems
+# # while amount <= 0:
+# #     print("Invalid deposit amount!")
+# #     amount = float(input("Enter deposit amount: "))
 
-# ### Q13. Integer Between 1 and 100
+# # balance += amount
 
-# Keep asking until an integer between `1` and `100`, inclusive, is entered.
+# # print("Updated balance:", balance)
 
-# **Answer:**
 
+# # ## Part B — Challenging Problems
 
-# n = int(input("Enter an integer (1-100): "))
+# # ### Q13. Integer Between 1 and 100
 
-# while n < 1 or n > 100:
-#     print("Invalid number!")
-#     n = int(input("Enter an integer (1-100): "))
+# # Keep asking until an integer between `1` and `100`, inclusive, is entered.
 
-# print("Accepted number:", n)
 
 
-# ### Q14. Marks and Result
+# # n = int(input("Enter an integer (1-100): "))
 
-# Accept marks between `0` and `100`. Display the appropriate result after validation.
+# # while n < 1 or n > 100:
+# #     print("Invalid number!")
+# #     n = int(input("Enter an integer (1-100): "))
 
-# **Answer:**
+# # print("Accepted number:", n)
 
-# marks = int(input("Enter marks (0-100): "))
 
-# while marks < 0 or marks > 100:
-#     print("Invalid marks!")
-#     marks = int(input("Enter marks (0-100): "))
+# # ### Q14. Marks and Result
 
-# if marks >= 75:
-#     print("Distinction")
-# elif marks >= 60:
-#     print("First Class")
-# elif marks >= 35:
-#     print("Pass")
-# else:
-#     print("Fail")
-# ### Q15. Username and Password Validation
+# # Accept marks between `0` and `100`. Display the appropriate result after validation.
 
-# The username must have at least five characters after trimming outer spaces and contain no internal spaces. The password must have at least eight non-whitespace characters and cannot consist only of spaces.
 
-# **Answer:**
+# # marks = int(input("Enter marks (0-100): "))
 
-# while True:
-#     username = input("Enter username: ").strip()
-#     password = input("Enter password: ")
+# # while marks < 0 or marks > 100:
+# #     print("Invalid marks!")
+# #     marks = int(input("Enter marks (0-100): "))
 
-#     if (len(username) >= 5 and " " not in username
-#             and len(password.strip()) >= 8):
-#         break
+# # if marks >= 75:
+# #     print("Distinction")
+# # elif marks >= 60:
+# #     print("First Class")
+# # elif marks >= 35:
+# #     print("Pass")
+# # else:
+# #     print("Fail")
+# # ### Q15. Username and Password Validation
 
-#     print("Invalid username or password! Try again.")
+# # The username must have at least five characters after trimming outer spaces and contain no internal spaces. The password must have at least eight non-whitespace characters and cannot consist only of spaces.
 
-# print("Login details accepted!")
 
-# ### Q16. Calculator Input Validation
+# # while True:
+# #     username = input("Enter username: ").strip()
+# #     password = input("Enter password: ")
 
-# Ask for two numbers and an operator (`+`, `-`, `*`, or `/`). Re-prompt for an invalid operator or a zero divisor.
+# #     if (len(username) >= 5 and " " not in username
+# #             and len(password.strip()) >= 8):
+# #         break
 
-# **Answer:**
+# #     print("Invalid username or password! Try again.")
 
-# a = float(input("Enter first number: "))
+# # print("Login details accepted!")
 
-# operator = input("Enter operator (+, -, *, /): ")
+# # ### Q16. Calculator Input Validation
 
-# while operator not in ["+", "-", "*", "/"]:
-#     print("Invalid operator!")
-#     operator = input("Enter operator (+, -, *, /): ")
+# # Ask for two numbers and an operator (`+`, `-`, `*`, or `/`). Re-prompt for an invalid operator or a zero divisor.
 
-# b = float(input("Enter second number: "))
 
-# while operator == "/" and b == 0:
-#     print("Division by zero is not allowed!")
-#     b = float(input("Enter second number: "))
+# # a = float(input("Enter first number: "))
 
-# if operator == "+":
-#     result = a + b
-# elif operator == "-":
-#     result = a - b
-# elif operator == "*":
-#     result = a * b
-# else:
-#     result = a / b
+# # operator = input("Enter operator (+, -, *, /): ")
 
-# print("Result:", result)
+# # while operator not in ["+", "-", "*", "/"]:
+# #     print("Invalid operator!")
+# #     operator = input("Enter operator (+, -, *, /): ")
 
-# ### Q17. Banking Menu
+# # b = float(input("Enter second number: "))
 
-# Start with ₹10,000. Allow the user to check balance, deposit money, withdraw money, or exit. Validate transactions before updating the balance.
+# # while operator == "/" and b == 0:
+# #     print("Division by zero is not allowed!")
+# #     b = float(input("Enter second number: "))
 
-# **Answer:**
+# # if operator == "+":
+# #     result = a + b
+# # elif operator == "-":
+# #     result = a - b
+# # elif operator == "*":
+# #     result = a * b
+# # else:
+# #     result = a / b
 
-# balance = 10000
+# # print("Result:", result)
 
-# choice = 0
+# # ### Q17. Banking Menu
 
-# while choice != 4:
-#     print("\n1. Check balance")
-#     print("2. Deposit money")
-#     print("3. Withdraw money")
-#     print("4. Exit")
+# # Start with ₹10,000. Allow the user to check balance, deposit money, withdraw money, or exit. Validate transactions before updating the balance.
 
-#     choice = int(input("Enter choice: "))
 
-#     while choice < 1 or choice > 4:
-#         print("Invalid choice!")
-#         choice = int(input("Enter choice: "))
+# # balance = 10000
 
-#     if choice == 1:
-#         print("Balance:", balance)
+# # choice = 0
 
-#     elif choice == 2:
-#         amount = float(input("Enter deposit amount: "))
+# # while choice != 4:
+# #     print("\n1. Check balance")
+# #     print("2. Deposit money")
+# #     print("3. Withdraw money")
+# #     print("4. Exit")
 
-#         while amount <= 0:
-#             print("Invalid amount!")
-#             amount = float(input("Enter deposit amount: "))
+# #     choice = int(input("Enter choice: "))
 
-#         balance += amount
-#         print("Updated balance:", balance)
+# #     while choice < 1 or choice > 4:
+# #         print("Invalid choice!")
+# #         choice = int(input("Enter choice: "))
 
-#     elif choice == 3:
-#         amount = float(input("Enter withdrawal amount: "))
+# #     if choice == 1:
+# #         print("Balance:", balance)
 
-#         while amount <= 0 or amount > balance:
-#             print("Invalid amount!")
-#             amount = float(input("Enter withdrawal amount: "))
+# #     elif choice == 2:
+# #         amount = float(input("Enter deposit amount: "))
 
-#         balance -= amount
-#         print("Updated balance:", balance)
+# #         while amount <= 0:
+# #             print("Invalid amount!")
+# #             amount = float(input("Enter deposit amount: "))
 
-# print("Thank you!")
+# #         balance += amount
+# #         print("Updated balance:", balance)
 
-# ### Q18. Validate Month and Day
+# #     elif choice == 3:
+# #         amount = float(input("Enter withdrawal amount: "))
 
-# Accept a month from `1` to `12` and a day from `1` to `31`. Repeat until both values are within their individual ranges.
+# #         while amount <= 0 or amount > balance:
+# #             print("Invalid amount!")
+# #             amount = float(input("Enter withdrawal amount: "))
 
-# **Answer:**
+# #         balance -= amount
+# #         print("Updated balance:", balance)
 
-# month = int(input("Enter month (1-12): "))
-# day = int(input("Enter day (1-31): "))
+# # print("Thank you!")
 
-# while (month < 1 or month > 12
-#        or day < 1 or day > 31):
-#     print("Invalid month or day!")
+# # ### Q18. Validate Month and Day
 
-#     month = int(input("Enter month (1-12): "))
-#     day = int(input("Enter day (1-31): "))
+# # Accept a month from `1` to `12` and a day from `1` to `31`. Repeat until both values are within their individual ranges.
 
-# print("Accepted month:", month)
-# print("Accepted day:", day)
 
-# ### Q19. Product Quantity and Price
+# # month = int(input("Enter month (1-12): "))
+# # day = int(input("Enter day (1-31): "))
 
-# Quantity must be a positive integer. Unit price must be greater than zero. Repeat only the invalid field's prompt.
+# # while (month < 1 or month > 12
+# #        or day < 1 or day > 31):
+# #     print("Invalid month or day!")
 
-# **Answer:**
+# #     month = int(input("Enter month (1-12): "))
+# #     day = int(input("Enter day (1-31): "))
 
-# quantity = int(input("Enter quantity: "))
+# # print("Accepted month:", month)
+# # print("Accepted day:", day)
 
-# while quantity <= 0:
-#     print("Quantity must be positive!")
-#     quantity = int(input("Enter quantity: "))
+# # ### Q19. Product Quantity and Price
 
-# price = float(input("Enter unit price: "))
+# # Quantity must be a positive integer. Unit price must be greater than zero. Repeat only the invalid field's prompt.
 
-# while price <= 0:
-#     print("Price must be positive!")
-#     price = float(input("Enter unit price: "))
 
-# total = quantity * price
+# # quantity = int(input("Enter quantity: "))
 
-# print("Total cost:", total)
+# # while quantity <= 0:
+# #     print("Quantity must be positive!")
+# #     quantity = int(input("Enter quantity: "))
 
-# ### Q20. Safe Average Calculator
+# # price = float(input("Enter unit price: "))
 
-# Accept a count from `1` to `20`, then read that many numeric values and calculate the average.
+# # while price <= 0:
+# #     print("Price must be positive!")
+# #     price = float(input("Enter unit price: "))
 
-# **Answer:**
+# # total = quantity * price
 
-# count = int(input("How many numbers? "))
+# # print("Total cost:", total)
 
-# while count < 1 or count > 20:
-#     print("Count must be between 1 and 20!")
-#     count = int(input("How many numbers? "))
+# # ### Q20. Safe Average Calculator
 
-# total = 0
+# # Accept a count from `1` to `20`, then read that many numeric values and calculate the average.
 
-# for i in range(count):
-#     n = float(input("Enter number: "))
-#     total += n
+# # **Answer:**
 
-# average = total / count
+# # count = int(input("How many numbers? "))
 
-# print("Average:", average)
+# # while count < 1 or count > 20:
+# #     print("Count must be between 1 and 20!")
+# #     count = int(input("How many numbers? "))
 
+# # total = 0
 
-# ### Q21. Stronger Password Rules
+# # for i in range(count):
+# #     n = float(input("Enter number: "))
+# #     total += n
 
-# Require at least eight characters, an uppercase letter, a lowercase letter, a digit, and no whitespace. Display the unsatisfied rules after each invalid attempt.
+# # average = total / count
 
-# **Answer:**
+# # print("Average:", average)
 
 
-# while True:
-#     password = input("Enter password: ")
+# # ### Q21. Stronger Password Rules
 
-#     upper = any(ch.isupper() for ch in password)
-#     lower = any(ch.islower() for ch in password)
-#     digit = any(ch.isdigit() for ch in password)
-#     no_space = not any(ch.isspace() for ch in password)
+# # Require at least eight characters, an uppercase letter, a lowercase letter, a digit, and no whitespace. Display the unsatisfied rules after each invalid attempt.
 
-#     valid = (
-#         len(password) >= 8
-#         and upper
-#         and lower
-#         and digit
-#         and no_space
-#     )
 
-#     if valid:
-#         print("Password accepted!")
-#         break
 
-#     print("Password requirements not satisfied:")
+# # while True:
+# #     password = input("Enter password: ")
 
-#     if len(password) < 8:
-#         print("- At least 8 characters")
+# #     upper = any(ch.isupper() for ch in password)
+# #     lower = any(ch.islower() for ch in password)
+# #     digit = any(ch.isdigit() for ch in password)
+# #     no_space = not any(ch.isspace() for ch in password)
 
-#     if not upper:
-#         print("- At least one uppercase letter")
+# #     valid = (
+# #         len(password) >= 8
+# #         and upper
+# #         and lower
+# #         and digit
+# #         and no_space
+# #     )
 
-#     if not lower:
-#         print("- At least one lowercase letter")
+# #     if valid:
+# #         print("Password accepted!")
+# #         break
 
-#     if not digit:
-#         print("- At least one digit")
+# #     print("Password requirements not satisfied:")
 
-#     if not no_space:
-#         print("- No whitespace characters")
+# #     if len(password) < 8:
+# #         print("- At least 8 characters")
 
+# #     if not upper:
+# #         print("- At least one uppercase letter")
 
-# ### Q22. Input Validation Without `break`
+# #     if not lower:
+# #         print("- At least one lowercase letter")
 
-# Accept an integer from `1` to `10` without using `break`.
+# #     if not digit:
+# #         print("- At least one digit")
 
-# **Answer:**
+# #     if not no_space:
+# #         print("- No whitespace characters")
 
 
-# n = int(input("Enter an integer (1-10): "))
+# # ### Q22. Input Validation Without `break`
 
-# while n < 1 or n > 10:
-#     print("Invalid number!")
-#     n = int(input("Enter an integer (1-10): "))
+# # Accept an integer from `1` to `10` without using `break`.
 
-# print("Accepted number:", n)
 
-# # Q23. Three Valid Scores
 
-# Accept three scores from `0` to `100`, inclusive. Repeat only the invalid score prompt, then display the total and average.
+# # n = int(input("Enter an integer (1-10): "))
 
-# **Answer:**
+# # while n < 1 or n > 10:
+# #     print("Invalid number!")
+# #     n = int(input("Enter an integer (1-10): "))
 
+# # print("Accepted number:", n)
 
-# score1 = int(input("Enter score 1: "))
+# # # Q23. Three Valid Scores
 
-# while score1 < 0 or score1 > 100:
-#     print("Invalid score!")
-#     score1 = int(input("Enter score 1: "))
+# # Accept three scores from `0` to `100`, inclusive. Repeat only the invalid score prompt, then display the total and average.
 
-# score2 = int(input("Enter score 2: "))
 
-# while score2 < 0 or score2 > 100:
-#     print("Invalid score!")
-#     score2 = int(input("Enter score 2: "))
 
-# score3 = int(input("Enter score 3: "))
+# # score1 = int(input("Enter score 1: "))
 
-# while score3 < 0 or score3 > 100:
-#     print("Invalid score!")
-#     score3 = int(input("Enter score 3: "))
+# # while score1 < 0 or score1 > 100:
+# #     print("Invalid score!")
+# #     score1 = int(input("Enter score 1: "))
 
-# total = score1 + score2 + score3
-# average = total / 3
+# # score2 = int(input("Enter score 2: "))
 
-# print("Total:", total)
-# print("Average:", average)
+# # while score2 < 0 or score2 > 100:
+# #     print("Invalid score!")
+# #     score2 = int(input("Enter score 2: "))
 
-# # Q24. ATM Withdrawal With Denomination Rules
+# # score3 = int(input("Enter score 3: "))
 
-# Start with ₹10,000. The withdrawal must be positive, must not exceed the balance, and must be a multiple of ₹100.
+# # while score3 < 0 or score3 > 100:
+# #     print("Invalid score!")
+# #     score3 = int(input("Enter score 3: "))
 
-# **Answer:**
+# # total = score1 + score2 + score3
+# # average = total / 3
 
-# balance = 10000
+# # print("Total:", total)
+# # print("Average:", average)
 
-# amount = int(input("Enter withdrawal amount: "))
+# # # Q24. ATM Withdrawal With Denomination Rules
 
-# while (amount <= 0
-#        or amount > balance
-#        or amount % 100 != 0):
-#     print("Invalid withdrawal amount!")
-#     amount = int(input("Enter withdrawal amount: "))
+# # Start with ₹10,000. The withdrawal must be positive, must not exceed the balance, and must be a multiple of ₹100.
 
-# balance -= amount
 
-# print("Withdrawn amount:", amount)
-# print("Remaining balance:", balance)
+# # balance = 10000
+
+# # amount = int(input("Enter withdrawal amount: "))
+
+# # while (amount <= 0
+# #        or amount > balance
+# #        or amount % 100 != 0):
+# #     print("Invalid withdrawal amount!")
+# #     amount = int(input("Enter withdrawal amount: "))
+
+# # balance -= amount
+
+# # print("Withdrawn amount:", amount)
+# # print("Remaining balance:", balance)

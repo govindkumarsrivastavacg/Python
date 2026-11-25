@@ -258,121 +258,121 @@
 
 
 
-x=1
-for i in range(3):
-    for j in range(3):
-        print(x,end=" ")
-        x+=1
-    print()
-
-
-
-
-# 18. Print 1 to 20 in 4 Rows
-# Write a Python program to print numbers from 1 to 20 in 4 rows, with 5 numbers in each row.
-
-# Expected output:
-
-# 1 2 3 4 5
-# 6 7 8 9 10
-# 11 12 13 14 15
-# 16 17 18 19 20
-
 # x=1
-# for i in range(4):
-#     for j in range(5):
+# for i in range(3):
+#     for j in range(3):
 #         print(x,end=" ")
 #         x+=1
 #     print()
 
 
-# 19. Print Coordinate Pairs
-# Write a Python program to print:
-
-# (1,1) (1,2) (1,3)
-# (2,1) (2,2) (2,3)
-# (3,1) (3,2) (3,3)
 
 
-# for i in range(1,4):
-#     for j in range(1,4):
-#         print(f"({i},{j})",end=" ")
-#     print()
+# # 18. Print 1 to 20 in 4 Rows
+# # Write a Python program to print numbers from 1 to 20 in 4 rows, with 5 numbers in each row.
+
+# # Expected output:
+
+# # 1 2 3 4 5
+# # 6 7 8 9 10
+# # 11 12 13 14 15
+# # 16 17 18 19 20
+
+# # x=1
+# # for i in range(4):
+# #     for j in range(5):
+# #         print(x,end=" ")
+# #         x+=1
+# #     print()
 
 
-# 20. Print All Number Combinations
-# For numbers from 1 to 3, print every possible pair:
+# # 19. Print Coordinate Pairs
+# # Write a Python program to print:
 
-# 1 1
-# 1 2
-# 1 3
-# 2 1
-# 2 2
-# 2 3
-# 3 1
-# 3 2
-# 3 3
-
-# for i in range(1,4):
-#     for j in range(1,4):
-#         print(f"{i} {j}")
+# # (1,1) (1,2) (1,3)
+# # (2,1) (2,2) (2,3)
+# # (3,1) (3,2) (3,3)
 
 
-
-# 22. Repeated Number Pattern
-# Write a Python program to print:
-
-# 1
-# 22
-# 333
-# 4444
-# 55555
+# # for i in range(1,4):
+# #     for j in range(1,4):
+# #         print(f"({i},{j})",end=" ")
+# #     print()
 
 
-# n=int(input("Enter the number of rows: "))
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(i,end="")
-#     print() 
+# # 20. Print All Number Combinations
+# # For numbers from 1 to 3, print every possible pair:
+
+# # 1 1
+# # 1 2
+# # 1 3
+# # 2 1
+# # 2 2
+# # 2 3
+# # 3 1
+# # 3 2
+# # 3 3
+
+# # for i in range(1,4):
+# #     for j in range(1,4):
+# #         print(f"{i} {j}")
 
 
 
-# for i in range(5,0,-1):
-#     for j in range(1,i+1):
-#         print(j,end="")
-#     print()
+# # 22. Repeated Number Pattern
+# # Write a Python program to print:
+
+# # 1
+# # 22
+# # 333
+# # 4444
+# # 55555
+
+
+# # n=int(input("Enter the number of rows: "))
+# # for i in range(1,n+1):
+# #     for j in range(1,i+1):
+# #         print(i,end="")
+# #     print() 
+
+
+
+# # for i in range(5,0,-1):
+# #     for j in range(1,i+1):
+# #         print(j,end="")
+# #     print()
 
 
     
-# 24. Reverse Number Pattern
-# Write a Python program to print:
+# # 24. Reverse Number Pattern
+# # Write a Python program to print:
 
-# 54321
-# 5432
-# 543
-# 54
-# 5
+# # 54321
+# # 5432
+# # 543
+# # 54
+# # 5
 
-# for i in range(5,0,-1):
-#     for j in range(5,5-i,-1):
-#         print(j,end=" ")
-#     print()
-
-
+# # for i in range(5,0,-1):
+# #     for j in range(5,5-i,-1):
+# #         print(j,end=" ")
+# #     print()
 
 
-# 25. Repeated Row Number Pattern
-# Write a Python program to print:
 
-# 11111
-# 22222
-# 33333
-# 44444
-# 55555
 
-# n=int(input("Enter the number of rows you want: "))
-# for i in range(1,n+1):
-#     for j in range(1,n+1):
-#         print(i,end="")
-#     print()
+# # 25. Repeated Row Number Pattern
+# # Write a Python program to print:
+
+# # 11111
+# # 22222
+# # 33333
+# # 44444
+# # 55555
+
+# # n=int(input("Enter the number of rows you want: "))
+# # for i in range(1,n+1):
+# #     for j in range(1,n+1):
+# #         print(i,end="")
+# #     print()
 

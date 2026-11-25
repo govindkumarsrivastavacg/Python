@@ -59,17 +59,64 @@
 # Input: n = -321 → Output: -123 (if you handle sign)
 
 
-n = input("Enter a number: ").strip()
+# n = input("Enter a number: ").strip()
 
-rev = ""
-j = 0
+# rev = ""
+# j = 0
 
-if n[0] == "-":
-    rev = "-"
-    j = 1
+# if n[0] == "-":
+#     rev = "-"
+#     j = 1
 
-for i in range(len(n) - 1, j - 1, -1):
-    rev += n[i]
+# for i in range(len(n) - 1, j - 1, -1):
+#     rev += n[i]
 
-print(int(rev))
+# print(int(rev))
 
+
+# Q25. Palindrome Number
+# Check if a number reads same forwards and backwards.
+
+# Input: n = 121 → Output: true (or "palindrome")
+# Input: n = 123 → Output: false
+# Input: n = 0 → Output: true
+
+
+# flag_pal=False
+# while(flag_pal==False):
+#     i=0
+#     flag_pal=True
+#     Str=input("Enter The number: ").strip()
+#     while(i<(len(Str)//2)):
+#         if(Str[i]!=Str[len(Str)-i-1]):
+#             flag_pal=False
+#             break
+#         i+=1
+#     if(flag_pal):
+#         print("The number is palindrome")
+#     else:
+#         print("The number is not Palindrome")
+#         print("Try Again!")
+
+
+
+# Q26. Prime Number (Simple Check)
+# Given a number, check if it is prime.
+
+# Input: n = 2 → Output: true
+# Input: n = 17 → Output: true
+# Input: n = 15 → Output: false
+
+
+num=int(input("Enter a number: "))
+if num<2:
+    print("Neither prime nor composite")
+else:
+    i=2
+    while(i*i<=num):
+        if(num%i==0):
+            print("Not a prime number")
+            break
+        i+=1
+    else:
+        print("Prime Number")
