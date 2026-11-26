@@ -229,4 +229,56 @@
 #     return max_digit(n//10,m)
 # print(max_digit(n,0))
 
+# x=-10
+# total=0
+# def sum(x,total):
+#     total+=x
+#     if x==10:
+#         return total
+#     return sum(x+1,total)
+    
+# print(sum(x,total))
+
+
+
+
+# Trace the return values (5 marks)
+# Without running the code, write the value returned by mystery(4) and show the return calculation.
+# def mystery(n):
+# if n <= 1:
+# return n
+# return mystery(n - 1) + mystery(n - 2)
+# Also state the values returned by mystery(0), mystery(1), and mystery(2).
+
+
+
+
+# Section D — Edge Cases and Debugging (10 marks)
+# 16.Fix the factorial (3 marks)
+# This function gives the wrong result for factorial(0). Fix the base case.
+# def factorial(n):
+# if n == 0:
+# return 0
+# return n * factorial(n - 1)
+# def factorial(n):
+# if n == 1:
+# return 1
+# return n * factorial(n - 1)
+# print(factorial(10))
+
+
+
+
+# 17.Make progress (3 marks)
+# The function below never changes n. Rewrite it so it counts down to 0 and stops.
+# def stop_at_zero(n):
+# if n == 0:
+# return
+# stop_at_zero(n)
+# def stop_at_zero(n):
+# if n == 0:
+# return 0
+# print(n)
+# return stop_at_zero(n-1)
+# print(stop_at_zero(9))
 
