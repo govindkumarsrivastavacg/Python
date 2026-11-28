@@ -120,9 +120,11 @@
 # x=2
 # n=int(input("Enter a number: "))
 # def prime(n,flag,x):
+#     if n==2:
+#         return "It is a prime number"
 #     if n%x==0:
 #         flag=True
-#     if flag==True or n==2:
+#     if flag==True:
 #         return "Not a prime number"
 #     elif flag==False and x==n-1:
 #         return "It is a prime number"
@@ -163,17 +165,17 @@
 # Write a recursive function that accepts a non-negative decimal integer and returns its binary representation as a string. Do not use bin().
 
 # Example:
-# Input: 13
-# Output: 1101
+Input: 13
+Output: 1101
 
-# n=int(input("Enter the number: "))
-# s=""
-# def binary(n,s):
-#     if n==0:
-#         return s[::-1]
-#     s=s+str(n%2)
-#     return binary(n//2,s)
-# print(binary(n,s))
+n=int(input("Enter the number: "))
+s=""
+def binary(n,s):
+    if n==0:
+        return s[::-1]
+    s=s+str(n%2)
+    return binary(n//2,s)
+print(binary(n,s))
 
 
 # 9. Check Whether a String Contains Only Digits
@@ -232,3 +234,5 @@
 #     return root(n,sum,x+1,y)
 
 # print(root(n,sum,x,y))
+
+

@@ -112,3 +112,8 @@
 
 # final=lambda p,d:p-(p*(d/100))
 # print(final(1000,10))
+
+
+
+# guess=lambda x:"Positive" if x>0 else "Negative" if x<0 else "Zero"
+# print(guess(-3))
